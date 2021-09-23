@@ -1,7 +1,7 @@
 ﻿/**
  * Application de test de la fonction 'Polonaise'
- * author : Emds
- * date : 20/06/2020
+ * author : Floops
+ * date : 23/09/2021
  */
 using System;
 
@@ -86,7 +86,7 @@ namespace TestNotationPolonaise
         /// <param name="carac1">premier caractère possible</param>
         /// <param name="carac2">second caractère possible</param>
         /// <returns>caractère saisi</returns>
-        static char saisie(string message, char carac1, char carac2)
+        static char Saisie(string message, char carac1, char carac2)
         {
             char reponse;
             do
@@ -113,7 +113,7 @@ namespace TestNotationPolonaise
                 string laFormule = Console.ReadLine();
                 // affichage du résultat
                 Console.WriteLine("Résultat =  " + Polonaise(laFormule));
-                reponse = saisie("Voulez-vous continuer ?", 'O', 'N');
+                reponse = Saisie("Voulez-vous continuer ?", 'O', 'N');
             } while (reponse == 'O');
         }
     }
